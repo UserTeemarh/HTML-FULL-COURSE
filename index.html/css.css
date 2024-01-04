@@ -1,0 +1,21 @@
+body {
+    background: black;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+}
+ /* h2{
+    text-align: center;
+    text-decoration:   underline;
+    font-size: 1.5em;
+} */
+table,thead,th,tbody,tr td  {
+    border-collapse: collapse;
+    padding: 10px;
+    margin: 10px ;
+    font-size: 20px;
+}
+thead, th {
+    background: white;
+    color: black;
+}

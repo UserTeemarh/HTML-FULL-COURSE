@@ -1,0 +1,194 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css.css">
+        <title>Form Tag</title>
+    </head>
+    <body>
+        <style>
+            body {
+                background: black;
+                color: white;
+                font-size: 25px;
+            }
+            h2, h3{
+                text-align: center;
+                text-decoration:   underline;
+                font-size: 1.5em;
+            }
+            form {
+                background: white;
+                font-size: 20px;
+                color: black;
+                padding: 10px;
+                margin: 30px;
+            }
+            form input {
+                margin-left: 20px;
+            }   
+            .form {
+                display: flex;
+
+            }
+            mark {
+                background: white;
+            }   
+        </style>
+        <h1><center>THE FORM ELEMENT</center></h1>
+        <p><b>&lt;form&gt;</b> is an HTML element to collect input data containing interactive controls. It  provide facilities to input text, number, email, password and other controls field. etc. Forms are generally used when you want to collect data from the user. </p>
+        <table border="2">
+            <caption>FORM ELEMENT AND DESCRIPTION</caption>
+            <thead>
+                <th>FORM ELEMENT</th>
+                <th>DESCRIPTION</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;label&gt;..&lt;/label&gt;</td>
+                    <td>It is used to associate a text label with a form &lt;input&gt; field. The label is used to tell users the value that should be entered in the associated input field </td>
+                </tr>
+                <tr>
+                    <td>&lt;input&gt;</td>
+                    <td>It is used to specified an input field where the user can enter data. The &lt;input&gt; element is the most important form element. The &lt;input&gt; element can be displayed  in several ways, depending on the type attribute</td>
+                </tr>
+                <tr>
+                    <td>&lt;select&gt;..&lt;/select&gt;</td>
+                    <td>The &lt;select&gt; element is used to create a drop-down list. It is used to collect user input. </td>
+                </tr>
+                <tr>
+                    <td>&lt;option&gt;..&lt;/option&gt;</td>
+                    <td>The &lt;option&gt; tag defines an option in a &lt;select&gt; tag. <mark>NOTE:</mark> The &lt;option&gt; tag can be used without any attributes, but you usually need the <b>value</b> attribute, which indicate what is sent to the server on form submission. </td>
+                </tr>
+                <tr>
+                    <td>&lt;optgroup&gt;&lt;/optgroup&gt;</td>
+                    <td>It is used to group related options in a &lt;select&gt; element (drop-down list). It is used if there is a long list of options, groups of related options are easier to handle for a user </td>
+                </tr>
+                <tr>
+                    <td>&lt;textarea&gt;..&lt;/textarea&gt;</td>
+                    <td>It is used to collect unlimited multi-line text like comment or reviews. you can specify the size of a text area by the <b>cols</b> and <b>rows</b> attributes</td>
+                </tr>
+                <tr>
+                    <td>&lt;button&gt;..&lt;/button&gt;</td>
+                    <td>It defines a clickable button which submits all form values to a form-handler. The form-handler is typically a server page with a script for processing the input data. The form-handler is specified in the form's action attribute</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>FORM ATTRIBUTES</h3>
+        <p>Form attribute specifies the form the element belongs to. The value of this attribute must be equal to the id attribute of a &lt;form&gt; element in the same document.</p>
+        <table border="2">
+            <caption>FORM ATTRIBUTE AND VALUE</caption>
+            <thead>
+                <th>ATTRIBUTE</th>
+                <th>VALUE</th>
+                <th>DESCRIPTION</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>action</b></td>
+                    <td>Owned URL <br> action_page.php <br> https://httpbin.org/get</td>
+                    <td>It is used to specify where the form data is to be sent to the server after the submission of the form. It has to be included in the &lt;form&gt; opening tag.</td>
+                </tr>
+                <tr>
+                    <td><b>method</b></td>
+                    <td>post <br> get <br> dialog</td>
+                    <td>It specifies how to send form-data ( the form data is sent to the page specified in the action attribute). The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post")</td>
+                </tr>
+                <tr>
+                    <td><b>formenctype</b></td>
+                    <td>multipart/form-data <br> text/plain</td>
+                    <td>It specifies how form-data should be encoded before sending it to a server. <mark>NOTE:</mark> The formenctype can only be used with buttons with type="submit"</td>
+                </tr>
+                <tr>
+                    <td><b>formmethod</b></td>
+                    <td>get <br> post</td>
+                    <td>It defines the HTTP method for sending form-data to the action URL. The formmethod overrides the method attribute. <mark>NOTE:</mark> The formmethod can be used with type="submit" and type="range"</td>
+                </tr>
+                <tr>
+                    <td><b>type</b></td>
+                    <td>text <br> number <br> password <br> checkbox <br> radio <br> submit <br> reset <br> file <br> date <br> search <br> time <br>range <br> tel <br> week <br> month <br> year <br>datetime-local <br> color
+                    </td>
+                    <td>It defines the type of input control to display and depending on which type is included,  provides for some validation in supporting browser</td>
+                </tr>
+                <tr>
+                    <td><b>required</b></td>
+                    <td>&NonBreakingSpace;</td>
+                    <td>It specifies that an input field must be filled out before submitting the form.</td>
+                </tr>
+                <tr>
+                    <td><b>placeholder</b></td>
+                    <td>text</td>
+                    <td>It specifies a short hint that describes the expected value of an input field. The short hint is displayed in the input field before the user enters a value</td>
+                </tr>
+                <tr>
+                    <td><b>readonly</b></td>
+                    <td>text</td>
+                    <td>It specifies that an input field or textarea is read only. A read-only field cannont be modified (however a user can tab to it, highlight it, and copy the text from it.)</td>
+                </tr>
+                <tr>
+                    <td><b>minlength <br> maxlength</b></td>
+                    <td>number</td>
+                    <td>Specifies the minimum and maximum number of characters allowed in an input field</td>
+                </tr>
+                <tr>
+                    <td><b>min <br> max </b></td>
+                    <td>number</td>
+                    <td>The min and max attribute are used to set the range of values for the &lt;input&gt; element. The min attribute sets the minimum value, while the max attribute sets the maximum value of the &lt;input&gt;</td>
+                </tr>
+                <tr>
+                    <td><b>step</b></td>
+                    <td>number</td>
+                    <td>It specifies the interval between legal numbers in an input element</td>
+                </tr>
+                <tr>
+                    <td><b>size</b></td>
+                    <td>number</td>
+                    <td>Specifies the width of the &lt;input&gt; form control.</td>
+                </tr>
+                <tr>
+                    <td><b>multiple</b></td>
+                    <td>&NonBreakingSpace;</td>
+                    <td>It specifies that the user is allowed to enter more than one value in the &lt;input&gt; element. <mark>NOTE:</mark> The multiple attribute works with the following input types; email, and file.</td>
+                </tr>
+                <tr>
+                    <td><b>autofocus</b></td>
+                    <td>&NonBreakingSpace;</td>
+                    <td>It specifies that an &lt;input&gt; element should automatically get focus when the page loads </td>
+                </tr>
+                <tr>
+                    <td><b>autocomplete</b></td>
+                    <td>ON</td>
+                    <td>When the autocomplete is set to <b>on</b> the browser will automatically complete the values based on what the user entered before</td>
+                </tr>
+                <tr>
+                    <td><b>value</b></td>
+                    <td>text/number</td>
+                    <td>The value attribute specifies the value of an element. It helps the user to have more idea about the information they are required to input. Because it is displayed on the &lt;input&gt; field.</td>
+                </tr>
+                <tr>
+                    <td><b>name</b></td>
+                    <td>text</td>
+                    <td>It defines the name of the form control, and is submitted along with the form control's value when the form is submitted</td>
+                </tr>
+                <tr>
+                    <td><b>checked</b></td>
+                    <td>&NonBreakingSpace;</td>
+                    <td>The checked attribute is commonly used with type="checkbox" and type="checkbox". It enables the &lt;input&gt; with checked attribute be <b>ticked</b> when the page loads</td>
+                </tr>
+                <tr>
+                    <td><b>disabled</b></td>
+                    <td>&NonBreakingSpace;</td>
+                    <td>It is used to set an &lt;input&gt; element to be unclickable and unusable.</td>
+                </tr>
+                <tr>
+                    <td><b>accesskey</b></td>
+                    <td></td>
+                    <td>The accesskey attribute assigns a keyboard shortcut to an element.The accesskey value is a single-character that matches a key on the keyboard.</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </body>
+    </html>

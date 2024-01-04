@@ -1,0 +1,237 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=5.5">
+    <meta name="Fatimah khan" content="this page is about the basics of html elements">
+    <meta http-equiv="refresh" content="30">
+    <title>Basic html tags</title>
+</head>
+<body>
+    <style>
+        body {
+             background: black;
+            color: white;
+            font-size: 22px;
+           
+        }
+        h2, h3{
+            text-align: center;     
+            text-decoration:   underline;
+            font-size: 1.5em;
+        }
+        mark {
+            background: white;
+            color: black;
+        }
+        table
+        {
+            margin: 10px;
+        }
+        dt,dl {
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+        table, thead, th, tbody, tr td {
+            /* font-size: 18px; */
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        h1 {
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+
+    </style>
+    <h1><center>HTML Element</center></h1>
+    <dt>
+        <dl>!DOCTYPE</dl>
+        <dd>The HTML document type declaration, also known as DOCTYPE. is the first-line of code required in every HTML document. The DOCTYPE declaration is an instructions  to the web browser about what version of HTML the page is written in <mark> this ensures that the web page is parsed the same way by different web browsers</mark></dd>
+    </dt>
+    <dt>
+        <dl>Html</dl>
+        <dd>the html element  is the second-line of code required in every HTML document in which all html element is going to be wrapped  in it. HTML has  an attribute of lang: <mark>the lang attribute specifies the language of the element's content</mark></dd>
+    </dt>
+    <dt>
+        <dl>Head</dl>
+        <dd>The &lt;head&gt; element is used to define the head portion of the document. This section typically contains meta-information about the HTML document, such as the <i>title</i>, <i>character set</i>, <i>styles</i>, <i>script,</i> and other metadata.</dd>
+    </dt>
+    <dt>
+
+        <dl>metadata</dl>
+        <dd>The metadata tags are used to provide information about the document itself. These tags are typically placed within the &lt;head&gt; section of an HTML document.</dd>
+        <p><i>These metadata tags help browsers, search engines, and other tools interpret and display the HTMl document correctly and efficiently. They play a crucial role in aspects like character encoding, viewport settings, styling and external resource linking.</i></p>
+    </dt>
+    <h4><center>Metadata types and their attribute</center></h4>
+    <fieldset>
+        <legend>&lt;meta charset="UTF-8"&gt;</legend>
+    <table border="1">
+        <caption>setting up the character set</caption>
+        <thead>
+            <th>Attribute</th>
+            <th>description</th>
+        </thead>
+        <tbody>
+            <th scope="row" rowspan="2">Charset</th>
+            <td><small><b>Charset</b></small> stands for <i>character set</i>. It refers to a specific collection of characters that are associated with a numerical code, allowing computers to represent and interpret text.</td>
+            <tr>
+            <td>The purpose is to specify the character encoding for the document. Character encoding defines the mapping between character codes and the actual characters they represent</td>
+        </tr>
+        </tbody>
+    </table>
+    <table border="1">
+        <thead>
+        <th>Attribute value</th>
+        <th>Description</th>
+    </thead>
+        <tbody>
+            <th scope="row" rowspan="2">UTF-8</th>
+            <td><small><b>UTF-8</b></small> &NonBreakingSpace;<mark> 8-bit unicode transformation format</mark>&NonBreakingSpace; is a character encoding that is capable of encoding all possible character, or code points, in Unicode.</td>
+            <tr>
+                <td><i>Unicode is a standardized character encoding system that assigns a unique number(code point) to every character from every writing system in the world
+                </i></td>
+            </tr>
+        </tbody>
+    </table>
+    <p>specifying &lt;meta charset="UTF-8"&gt; ensure that browser interprets and displays the document using UTF-8 encoding, allowing for the correct representation of a wide range of characters.</p>
+</fieldset>
+<fieldset>
+    <legend>&lt; Meta http-equiv="X-UA-Compatible" content="IE-edge"&gt;</legend>
+    <table border="1">
+        <caption>setting the http-equiv attribute</caption>
+        <thead>
+            <th>Attribute</th>
+            <th>Description</th>
+        </thead>
+        <tbody>
+            <th>http-equiv</th>
+            <td><mark><b>http-equiv</b></mark> stands for "HTTP(Hypertext Transfer Protocol)-Equivalent". It is used to define an HTTP header fo the information contained within the <small> &lt;meta&gt;</small> tag.The purpose of usings <small>http-equiv</small> is to provide metadata that emulates the behaviour of HTTP headers in an HTML document</td>
+        </tbody>
+    </table>
+    <table border="1">
+        <thead>
+            <th>Attribute value</th>
+            <th>Description</th>
+        </thead>
+        <tbody>
+            <th>X-UA-Compatible</th>
+            <td><small><b>X-UA-Compatible</b></small> is an HTTP header that is used to control the document mode and compatibility mode of Internet Explorer. It allows web developer to specify how Internet Explorer should render a webpage.</td>
+        </tbody>
+    </table>
+    <table border="1">
+        <thead>
+            <th>Attribute</th>
+            <th>Description</th>
+        </thead>
+        <tbody>
+            <th>Content</th>
+            <td>The <small><b>content</b></small> attribute in the <small> &lt;meta&gt;</small> tag is used to provide information or values associated with a particular metadata directive. </td>
+            <tr>
+                <th>IE-edge</th>
+                <td>The <small><b>IE-EDGE</b></small> value is used to instruct Internet Explorer to use the highest available document mode and rendering engine. This setting is commonly used to ensure better compatibility with modern web standard</td>
+            </tr>
+        </tbody>
+    </table>
+</fieldset>
+<fieldset>
+    <legend>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</legend>
+    <table border="1">
+        <caption>setting the viewport</caption>
+        <thead>
+            <th>Attribute value</th>
+            <th>Description</th>
+        </thead>
+        <tbody>
+            <th scope="row" rowspan="2">Viewport</th>
+            <td>The <small><b>Viewport</b></small> is used to control the layout and scaling of a web page on different devices.</td>
+            <tr>
+                <td><small>It helps create a responsive design that adjusts to the screen size of the device providing a better user experience on both deskstop and mobile devices</small></td>
+            </tr>
+        </tbody>
+    </table>
+    <table border="1">
+        <thead>
+            <th>attribute value</th>
+            <th>description</th>
+        </thead>
+        <tbody>
+            <th scope="row" rowspan="2">&nbsp;</th>
+            <td>The <small><b>width=device-width</b></small> sets the width of the viewport to the width of the device screen. This ensures that the content will be displayed at the actual width of the device, helping in creating responsive designs.
+                <tr>
+        <td>
+           The <small><b>initial-scale=1.0</b></small> sets the initial zoom level when the page is first loaded. A value of 1.0 means that there is no initial zoom, and the page will be displayed at its normal scale. This crucial for ensuring that the layout and content are apporpriately sized on various devices, especially on mobile devices where users might zoom in by default.</td>
+        </td>
+        </tr> 
+        </tbody>
+    </table>
+</fieldset>
+<fieldset>
+    <legend>&lt;meta http-equiv="refresh" content="30"&gt;</legend>
+    <table border="1">
+        <thead>
+            <th>attribute value</th>
+            <th>description</th>
+        </thead>
+        <tbody>
+            <th>refresh</th>
+            <td>meta refresh <mark>is a method of instructing a web browser to automatically refresh the current web page or frame after a given time interval</mark></td>
+        </tbody>
+    </table>
+</fieldset>
+<fieldset>
+    <legend>&lt;meta name="description" content="HTML TUTORIAL"&gt;</legend>
+    <table border="1">
+        <caption>setting up the description</caption>
+        <thead>
+            <th>attribute value</th>
+            <th>description</th>
+        </thead>
+        <tbody>
+            <th>description</th>
+            <td>meta description generally <mark>informs and interests users with a short, relevant summary of what a particular page is about.</mark>they are like pitch that convince the user that the page is exactly what they are looking for.</td>
+        </tbody>
+    </table>
+</fieldset>
+<fieldset>
+    <legend>&lt;meta name="keywords" content="HTML, CSS, and JAVASCRIPT"&gt;</legend>
+    <table border="1">
+    <caption>setting up the keyword</caption>
+    <thead>
+        <th>attribute value</th>
+        <th>description</th>
+    </thead>
+    <tbody>
+        <th>keyword</th>
+        <td>The <small><b>keyword</b></small> is used to specify a list of comma-seperated keywords relevant to the content of the webpage.</td>
+    </tbody>
+</table>
+</fieldset>
+<fieldset>
+    <legend>&lt;meta name="author" content="Fatimah Khan"&gt;</legend>
+    <table border="1">
+        <caption>including the author's information</caption>
+        <thead>
+            <th>attribute value</th>
+            <th>description</th>
+        </thead>
+        <tbody>
+            <th>author</th>
+            <td>meta author are <mark>used to record information such as who built the corresponding website and who copyright the ownership belongs to.</mark></td>
+        </tbody>
+    </table>
+</fieldset>
+    <dt>
+        <dl>Title</dl>
+        <dd>The Title tag is <mark>used to define the title of HTML document</mark>. it sets the title in the browser toolbar. it provides the title for the web page when it is added to favorites. it displays the title for the page in search engine results.</dd>
+    </dt>
+    <dt>
+        <dl>body</dl>
+        <dd>the Body tag <mark>defines the main content of an HTML document which displays on the browser.</mark> it contains all the content of an HTML document, such as <i> headings, paragraphs, images, heading, tables, lists, link etc.</i> </dd>
+    </dt>
+    <dt>
+        <dl>heading</dl>
+        <dd>The Heading tag is <mark>used to define the headings of a page.</mark> they are six levels of headings defined by HTML. these 6 heading element are from h1-h6. <b>h1</b> defines the most important heading, while <b>h6</b> defines the least important heading. <mark>NOTE:</mark> only use one h1 per page- this should represent the main heading/subject for the whole page</dd>
+    </dt>
+</body>
+</html>

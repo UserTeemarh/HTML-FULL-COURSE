@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Link  tag</title>
+</head>
+<body>
+    <style>
+        body {
+            background: black;
+            color: white;
+            font-size: 25px;
+        }
+        h1 {
+            text-align: center;
+            text-decoration:   underline;
+            font-size: 1.5em;
+        }
+        h3 {
+            text-decoration: underline;
+        }
+        mark {
+            background: white;
+        }
+        dt, dl {
+            font-weight: 900;
+        }
+        ul li {
+            font-weight: 100;
+        }
+    </style>
+    <h1><center>The &lt;a&gt; (anchor) Element</center></h1>
+    <p>The &lt;a&gt; element with its <b>href</b> attribute, creates a hyperlink to web pages, files,  email addresses, locations in the same page, or anything else a URL can address, content within each &lt;a&gt; should indicate the link's destination.</p>
+    <h3>The &lt;a&gt; (anchor) Reconigtion</h3>
+    <ul>
+        <li>An unvisited link is underlined and blue in color</li>
+        <li>A visited link is underlined and purple in color</li>
+        <li>An active link is underlined and red</li>
+    </ul>
+    <table border="2">
+        <caption><b>ANCHOR &lt;a&gt;</b> TAG ATTRIBUTES</caption>
+        <thead>
+            <th>ATTRIBUTES</th>
+            <th>VALUE</th>
+            <th>DESCRIPTION</th>
+    <tbody>
+        <tr>
+            <td><b>href</b></td>
+            <td>URL</td>
+            <td>The href (hypertext reference) attribute specifies the URL of the page the link goes to. if the href attibute is not present, the &lt;a&gt; tag will not be a hyperlink.</td>
+        </tr>
+        <tr>
+            <td><b>target</b></td>
+            <td>_blank <br>_parent <br>_self <br>_top </td>
+            <td>The target attribute specifies where the linked document will open when the link is clicked. this will enable the linked document will open in a new tab or (older browser) a new window</td>
+        </tr>
+        <tr>
+            <td><b>title</b></td>
+            <td>text</td>
+            <td>The title attribute gives users an imporatant indication as to where they will be directed to when they click on a link. if the user hovers with mouser over a link reference, the title text, which was defined in the attribute, will be displayed.</td>
+        </tr>
+        <tr>
+            <td><b>download</b></td>
+            <td>&NonBreakingSpace;</td>
+            <td>The download attribute specifies that the target (the specified in the href attribute) will be downloaded when a user clicks on the hyperlink. </td>
+        </tr>
+        <tr>
+            <td><b>hreflang</b></td>
+            <td>&NonBreakingSpace;</td>
+            <td>The hreflang attibute specifies the language and geographical target of a webpage.</td>
+        </tr>
+        <tr>
+            <td><b>name</b></td>
+            <td>&NonBreakingSpace;</td>
+            <td>The name attribute specifies the name of for an &lt;a&gt; element.</td>
+        </tr>
+    </tbody>
+</table>
+<h3><center>Ways of implementing the Value of href attribute</center></h3>
+<dt>
+    <dl>Adding Phone Number Call link to a Website</dl>
+    <dd><mark>tel:</mark> follow by the phone-number to be linked, this creates the call link. And this tells the browser how to use the number.</dd>
+</dt>
+<dt>
+    <dl>Adding Email link to a Website</dl>
+    <ul>
+        <li>Insert the <mark>mailto:</mark> into the href attribute follow by the email address.</li>
+        <li>To have the email sent to multiple email addresses, comma-seperate each email address</li>
+    </ul>
+</dt>
+<dt>
+    <dl>Adding SMS link to a Website</dl>
+    <dd>Insert the <mark>sms:</mark> into the href attribute follow by the phone-number of the recipient</dd>
+</dt>
+<dt>
+    <dl>Adding  an Absolute URL link to a Website</dl>
+    <dd>Insert the correct URL of the page you want the content to be linked to into the href attribute</dd>
+</dt>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Table</title>
+</head>
+<body>
+    <style>
+        body {
+            background: black;
+            color: white;
+            font-size: 23px;
+        }
+        mark {
+            background: white;
+        }
+    </style>         
+    <h1><center>THE TABLE ELEMENT</center></h1>
+    <p>The &lt;table&gt; element represents tabular data __ that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data.</p>
+    <dt>
+        <dl><b>Syntax:</b></dl>
+        <dd>The &lt;table&gt; tag is written as &lt;table&gt;...&lt;/table&gt; with the various table element nested between the start and end tags.</dd>
+    </dt>
+    <table border="2" align="center">
+        <caption><marquee behaviour="alternate" direction="right">TABLE ELEMENT AND DESCRIPTION</marquee></caption>
+        <thead>
+            <th>TABLE ELEMENT</th>
+            <th>DESCRIPTION</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lt;caption&gt;..&lt;/caption&gt;</td>
+                <td>It identifies a table title. The &lt;caption&gt; tag must be inserted immediately after the &lt;table&gt; opening tag. <mark>NOTE:</mark> a table caption will be center-aligned above a table. </td>
+            </tr>
+            <tr>
+                <td>&lt;thead&gt;..&lt;/thead&gt;</td>
+                <td>The &lt;thead&gt; tag is used to group header content in an HTML table. </td>
+            </tr>
+            <tr>
+                <td>&lt;th&gt;..&lt;/th&gt;</td>
+                <td>The &lt;th&gt; Element defines a cell as the header of a group of table cells. </td>
+            </tr>
+            <tr>
+                <td>&lt;tbody&gt;..&lt;/tbody&gt;</td>
+                <td>The &lt;tbody&gt; tag is used to group the body content in an HTML table </td>
+            </tr>
+            <tr>
+                <td>&lt;td&gt;..&lt;/td&gt;</td>
+                <td>The &lt;td&gt; (table data) Element defines a cell of table that contains data. It participates in the table model </td>
+            </tr>
+            <tr>
+                <td>&lt;tr&gt;..&lt;/tr&gt;</td>
+                <td>The &lt;tr&gt; (table row) Element defines a row of cells in a table. </td>
+            </tr>
+            <tr>
+                <td>&lt;tfoot&gt;..&lt;/tfoot&gt;</td>
+                <td>The &lt;tfoot&gt; tag is used to group the footer content in an HTML table. </td>
+            </tr>
+            <tr>
+                <td>&lt;colgroup&gt;..&lt;/colgroup&gt;</td>
+                <td>It specifies a group of one or more columns in a table for formatting. It is useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row</td>
+            </tr>
+            <tr>
+                <td>&lt;col&gt;</td>
+                <td>It typically implemented as a child-element of a &lt;colgroup&gt; element. It can be used to target a column in an HTML table. This element must not contain any content, and does not need a closing tag.</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>TABLE ATTRIBUTES</h3>
+    <p>Table attributes adjust the behaviour or display of its content. known as <b>table-child</b></p>
+    <table border="1">
+        <caption>TABLE ATTRIBUTES AND DESCRIPTION</caption>
+        <thead>
+            <th>ELEMENT ATTRIBUTES</th>
+            <th>VALUE</th>
+            <th>DESCRIPTION</th>
+        </thead>
+        <tbody>
+            <tr>
+            <td><b>border</b></td>
+            <td>number</td>
+            <td>It is used to specify the border of a table. It sets the border (tabular form) around the table cells.</td>
+        </tr>
+        <tr>
+            <td><b>align</b></td>
+            <td>center <br> left <br> right <br> justify</td>
+            <td>It specifies the alignment of a table according to surrounding text. It allows other HTML elements to wrap around the table.</td>
+        </tr>
+        <tr>
+            <td><b>width</b></td>
+            <td>Pixels</td>
+            <td>It specifies the width of a table. If the width attribute is not set, then it takes default width according to content.</td>
+        </tr>
+        <tr>
+            <td><b>cellpadding</b></td>
+            <td>pixels <br> %</td>
+            <td>It defines the space between the cell's edges/walls and its content. Cell padding is an inline attribute, so it is always inside the table opening tag.</td>
+        </tr>
+        <tr>
+            <td><b>cellspacing</b></td>
+            <td>pixels <br> %</td>
+            <td>It is used to set the distance or the space between the edges of the cells of the  table. The table's looks can be improved by using the cellspacing attribute in HTML. it increases the space between the cells.</td>
+        </tr>
+        <tr>
+            <td><b>frame</b></td>
+            <td>void <br> above <br> below <br> hsides <br> lhs <br> rhs <br> vsides <br> box  <br> border</td>
+            <td>It is used to specify the visibility of outside borders</td>
+        </tr>
+        <tr>
+            <td><b>rules</b></td>
+            <td>none <br> groups <br> rows <br> cols <br> all </td>
+            <td>It specifies which parts of the inside borders that should be visible.</td>
+        </tr>
+        <tr>
+            <td><b>bgcolor</b></td>
+            <td>colorName </td>
+            <td>It sets the background color of a HTML element.</td>
+        </tr>
+        </tbody>
+
+    </table>
+    <fieldset>
+        <legend>my assignment</legend>
+    <li>1. creat a table and set the border to 5px</li>
+    <li>2. give your table 10 different heading in which they have to be in column form.</li>
+    <li>3. give each heading 5 table data</li>
+    <li>4. create another table, give it 5 heading, NOTE heading one should be <mark> null</mark></li>
+    <li>5. inside table body, create a th and set it to be <sup>rowpan</sup> and give it 5 different td corresponding to the table heading..</li>
+    <li>6. inside table body, create a th and set it to be colspan and give it 5 different td corresponding to the table heading..</li>
+    <li>7. create a <strong>copyright</strong> to your footer.</li>
+    </fieldset>
+    <footer><code>&lt;&lt;&lt; &copy; copyright || 2030 &gt;&gt;&gt;</code></footer>
+</body>
+</html>
