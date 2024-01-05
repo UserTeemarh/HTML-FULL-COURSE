@@ -4,10 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css.css">
     <title>Html tags</title>
 </head>
-<body>  
+<body> 
+    <style>
+        body {
+        background: black;
+        color: white;
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    table,thead,th,tbody,tr td  {
+        border-collapse: collapse;
+        padding: 10px;
+        margin: 10px ;
+        font-size: 20px;
+    }
+    thead, th {
+        background: white;
+        color: black;
+    }
+    </style> 
     <h1><center>HTML ELEMENTs (2)</center></h1>
     <table border="1">
         <thead>
@@ -21,14 +39,14 @@
                 <td>&lt;img&gt;</td>
                 <td>It is used to embed images in a webpage. It is an empty self-closing tag, and does not have a closing tag.</td>
             </tr>
-            <!-- <tr>
+            <tr>
                 <td>&lt;video&gt;...&lt;/video&gt;</td>
                 <td>It is used to embed videos  in a webpage</td>
             </tr>
             <tr>
                 <td>&lt;audio&gt;...&lt;/audio&gt;</td>
                 <td>This tag is used to embed sound content in a document, such as music or other audio streams.</td>
-            </tr> -->
+            </tr>
             <tr>
                 <td>&lt;a&gt;...&lt;/a&gt;</td>
                 <td>An (anchor) element creates hyperlink to webpages or anything else a URL can address. content within each &lt;a&gt; should indicate the link's destination. </td>
@@ -89,7 +107,5 @@
          
         </tbody>
     </table>
-    <!-- <audio controls src="/html full course/audio/music.mp3.mp3" autoplay muted></audio>
-<video controls src="/html full course/video/Learn HTML – Full Tutorial for Beginners (2022) ( 1080 X 1920 ).mp4" width="100%" autoplay muted></video> -->
 </body>
 </html>
