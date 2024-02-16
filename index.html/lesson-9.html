@@ -12,38 +12,38 @@
                 background: black;
                 color: white;
                 font-size: 25px;
-            }
-            h2, h3{
-                text-align: center;
-                text-decoration:   underline;
-                font-size: 1.5em;
-            }
-            form {
-                background: white;
-                font-size: 20px;
-                color: black;
-                padding: 10px;
-                margin: 30px;
-            }
-            form input {
-                margin-left: 20px;
-            }   
-            .form {
-                display: flex;
-
+                min-width: 500px;
             }
             mark {
                 background: white;
             }   
             table,thead,th,tbody,tr td  {
             border-collapse: collapse;
+            border: 2px solid white;
             padding: 10px;
             margin: 10px ;
             font-size: 20px;
             }
+            h2, h3 {
+                text-align: center;
+                text-decoration: underline;
+            }
             thead, th {
                 background: white;
                 color: black;
+            }
+            @media (max-width: 500px) {
+                body {
+                    min-width: 280px;
+                    background-color: green;
+                    font-size: 15px;
+                }
+                table,thead,th,tbody,tr td {
+                    font-size: 15px;
+                    margin: none;
+                    padding: none;
+                }
+                
             }
         </style>
         <h1><center>THE FORM ELEMENT</center></h1>
@@ -71,10 +71,10 @@
                     <td>&lt;option&gt;..&lt;/option&gt;</td>
                     <td>The &lt;option&gt; tag defines an option in a &lt;select&gt; tag. <mark>NOTE:</mark> The &lt;option&gt; tag can be used without any attributes, but you usually need the <b>value</b> attribute, which indicate what is sent to the server on form submission. </td>
                 </tr>
-                <tr>
-                    <td>&lt;optgroup&gt;&lt;/optgroup&gt;</td>
+                <!-- <tr>
+                    <td>&lt;optgroup&gt;.&lt;/optgroup&gt;</td>
                     <td>It is used to group related options in a &lt;select&gt; element (drop-down list). It is used if there is a long list of options, groups of related options are easier to handle for a user </td>
-                </tr>
+                </tr> -->
                 <tr>
                     <td>&lt;textarea&gt;..&lt;/textarea&gt;</td>
                     <td>It is used to collect unlimited multi-line text like comment or reviews. you can specify the size of a text area by the <b>cols</b> and <b>rows</b> attributes</td>
@@ -86,7 +86,7 @@
             </tbody>
         </table>
         <h3>FORM ATTRIBUTES</h3>
-        <p>Form attribute specifies the form the element belongs to. The value of this attribute must be equal to the id attribute of a &lt;form&gt; element in the same document.</p>
+        <p>Form attribute specifies the form the element belongs to. The value of the attribute must be equal to the id attribute of a &lt;form&gt; element in the same document.</p>
         <table border="2">
             <caption>FORM ATTRIBUTE AND VALUE</caption>
             <thead>
@@ -97,27 +97,17 @@
             <tbody>
                 <tr>
                     <td><b>action</b></td>
-                    <td>Owned URL <br> action_page.php <br> https://httpbin.org/get</td>
+                    <td>Owned URL <br> <br> action_page.php <br><br>https://httpbin.org/get</td>
                     <td>It is used to specify where the form data is to be sent to the server after the submission of the form. It has to be included in the &lt;form&gt; opening tag.</td>
                 </tr>
                 <tr>
                     <td><b>method</b></td>
-                    <td>post <br> get <br> dialog</td>
+                    <td>post <br> <br> get  <br><br> dialog</td>
                     <td>It specifies how to send form-data ( the form data is sent to the page specified in the action attribute). The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post")</td>
                 </tr>
                 <tr>
-                    <td><b>formenctype</b></td>
-                    <td>multipart/form-data <br> text/plain</td>
-                    <td>It specifies how form-data should be encoded before sending it to a server. <mark>NOTE:</mark> The formenctype can only be used with buttons with type="submit"</td>
-                </tr>
-                <tr>
-                    <td><b>formmethod</b></td>
-                    <td>get <br> post</td>
-                    <td>It defines the HTTP method for sending form-data to the action URL. The formmethod overrides the method attribute. <mark>NOTE:</mark> The formmethod can be used with type="submit" and type="range"</td>
-                </tr>
-                <tr>
                     <td><b>type</b></td>
-                    <td>text <br> number <br> password <br> checkbox <br> radio <br> submit <br> reset <br> file <br> date <br> search <br> time <br>range <br> tel <br> week <br> month <br> year <br>datetime-local <br> color
+                    <td>text <br> number <br> mail <br> password <br> checkbox <br> radio <br> submit <br> reset <br> file <br> date <br> search <br> time <br>range <br> tel <br> week <br> month <br> year <br>datetime-local <br> color
                     </td>
                     <td>It defines the type of input control to display and depending on which type is included,  provides for some validation in supporting browser</td>
                 </tr>
@@ -184,17 +174,12 @@
                 <tr>
                     <td><b>checked</b></td>
                     <td>&NonBreakingSpace;</td>
-                    <td>The checked attribute is commonly used with type="checkbox" and type="checkbox". It enables the &lt;input&gt; with checked attribute be <b>ticked</b> when the page loads</td>
+                    <td>The checked attribute is commonly used with type="checkbox" and type="radio". It enables the &lt;input&gt; with checked attribute be <b>ticked</b> when the page loads</td>
                 </tr>
                 <tr>
                     <td><b>disabled</b></td>
                     <td>&NonBreakingSpace;</td>
                     <td>It is used to set an &lt;input&gt; element to be unclickable and unusable.</td>
-                </tr>
-                <tr>
-                    <td><b>accesskey</b></td>
-                    <td></td>
-                    <td>The accesskey attribute assigns a keyboard shortcut to an element.The accesskey value is a single-character that matches a key on the keyboard.</td>
                 </tr>
             </tbody>
         </table>

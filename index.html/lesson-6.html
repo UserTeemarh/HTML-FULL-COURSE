@@ -12,18 +12,14 @@
         body {
             background-color: black;
             color: white;
-            font-size: 23px;
+            font-size: 20px;
+            text-transform: capitalize;
         }
         dt,dl {
             font-size: 30px;
-            text-decoration: underline;
         }
         h1 center {
             font-size: 1em;
-        }
-        h3 {
-            font-size: 20px;
-            text-transform: capitalize;
         }
         table,thead,th,tbody,tr td  {
             border-collapse: collapse;
@@ -43,8 +39,8 @@
     </dt> 
     <h3>Image &lt;img&gt; tag syntax</h3>
     <ul>
-        <li>create a new file (inside the same folder that your HTML is opened with) and save it as <b>img</b></li>
-        <li><i>copy</i> and <i>paste</i> your image into the img file you created.</li>
+        <li>create a new folder (inside the same folder that your HTML is opened with) and save it as <b>img</b></li>
+        <li><i>copy</i> and <i>paste</i> your image into the img folder you created.</li>
         <li>then: declare the img tag and include the <b>src attribute</b>.</li>
         <li>copy the image URL into the <b>src</b> attribute</li>
     </ul>
@@ -88,26 +84,21 @@
             </tr>
             <tr> 
                 <td><b>longdesc</b></td>
-                <td>URL</td>
+                <td>text</td>
                 <td>the longdesc attribute in html is a URL, the target of which contains a long description of the non-text content. Authors can provide a description for an image by including text in a separate resource or within the text of the page containing the image.</td>
-            </tr>
-            <tr>
-                <td><b>sizes</b></td>
-                <td>URL</td>
-                <td>the size attribute tells browsers to assume the image fills the entire browser width.</td>
             </tr>
         </tbody>
     </table>
     <dt>
         <dl><b>THE VIDEO &lt;video&gt;....&lt;/video&gt; ELEMENT </b></dl>
-        <dd>The &lt;video&gt; element embeds a media player which supports video playback into the document. it contains on or more &lt;source&gt; tags with different video sources. the browser will choose the first source it supports. the text between &lt;video&gt; and &lt;/video&gt; tags will only be displayed in browsers that do not support the &lt;video&gt; element.</dd>
+        <dd>The &lt;video&gt; element embeds a media player which supports video playback into the document. It contains one or more &lt;source&gt; tags with different video sources. the browser will choose the first source it supports. The text between &lt;video&gt; and &lt;/video&gt; tags will only be displayed in browsers that do not support the &lt;video&gt; element.</dd>
     </dt>
     <h3>VIDEO &lt;video&gt;....&lt;/video&gt; TAG SYNTAX</h3>
     <ul>
-        <li>create a new file (inside the same folder that your HTML is opened with) and save it as <b>video</b></li>
-        <li>the video to be used must be <b>mp4</b></li>
+        <li>Create a new folder (inside the same folder that your HTML is opened with) and save it as <b>video</b></li>
+        <li>The video to be used must be <b>mp4</b></li>
         <li><i>copy</i> and <i>paste</i> the video into the video file you created.</li>
-        <li>then: declare the video tag and  add other necessary attribute to be able play the video on the browser</li>
+        <li>Then: declare the video tag and  add other necessary attribute to be able play the video on the browser</li>
     </ul>
     <table border="2">
         <caption><b>VIDEO &lt;video&gt;....&lt;/video&gt;</b> TAG ATTRIBUTES</caption>
@@ -121,7 +112,7 @@
             <td><b>src</b></td>
             <td>URL</td>
             <td>The src attribute specifies the location (URL) of the video file. The attribute uses <b>ogg</b> file on firefox, opera and chrome browsers. to play the video in old Internet Explorer and Safari, we must use an MPEG4 file.</td>
-        </tr>
+        </tr>+
         <tr>
             <td><b>controls</b></td>
             <td>controls</td>
@@ -142,7 +133,7 @@
         <tr>
             <td><b>height</b></td>
             <td>pixels</td>
-            <td>The height attibute specifies the height of an audio player, in PIXELS. </td>
+            <td>The height attibute specifies the height of an video player, in PIXELS. </td>
         </tr>
         <tr>
             <td><b>width</b></td>
@@ -174,7 +165,7 @@
     <ul>
         <li>choose an audio file in formats like <b>mp3</b>, <b>WAV</b>, or <b>OGG</b></li>
         <li>insert the &lt;audio&gt; element in your HTML, specifying the audio file with the src attribute</li>
-        <li>use the controls attriubte to add player controls</li>
+        <li>use the controls attribute to add player controls</li>
     </ul>
     <table border="2">
         <caption><b>AUDIO &lt;audio&gt;....&lt;/audio&gt;</b> TAG ATTRIBUTES</caption>
@@ -212,9 +203,7 @@
                 <td>auto <br> metadata <br>none</td>
                 <td>specifies if and how the author thinks the audio should be loaded when the page loads</td>
             </tr>
-
         </tbody>
     </table>
-    
 </body>
 </html>

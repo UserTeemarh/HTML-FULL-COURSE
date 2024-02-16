@@ -1,68 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta http-equiv="refresh" content="5">
-        <meta name="Author" content="Fatimah Khan">
-        <meta name="description" content="This is about practicing HTML Element">
-        <meta name="keyword" content="HTML Elements">
-        <title>PROJECT PRACTICE</title>
-    </head>
-    <body>
-        <h1><center><u>FAIIT (Fabulously Amazing Institute of Information Technology) SCHOOL</u></center></h1>
-        <hr>
-        <p>The <abbr title="Fabulously Amazing Institute of Information Technology"><b>FAIIT</b></abbr> Institute of Tech founded by <b> Mr. Owoniyi Johnson.</b>  Lorem ipsum dolor sit amet consectetur adipisicing elit. A, soluta? Ut tempore natus necessitatisus. Asperiores expedita minima velit architecto iste nemo nobis ipsa, quidem libero modi? Ea illo voluptatum vitae?</p>
-    </body>
-    <h2><u>OBJECTIVES OF THE SCHOOL</u></h2>
-    <fieldset>
-        <h4>SEGMENT ONE</h4>
-        <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat expedita, mollitia eius hic omnis velit dolor eos adipisci commodi ex nihil itaque cum atque eveniet ad reiciendis sed alias quia?
-        Praesentium voluptatem asperiores beatae distinctio omnis deserunt ad accusamus enim? Blanditiis, sed maxime neque aperiam minus doloribus quod nostrum tempore, quidem temporibus unde omnis nisi aliquam odio, corporis laboriosam! Ea?</i></p>
-    </fieldset>
-    <div>
-    <fieldset>
-        <legend>Sub-Segment two</legend>
-        <h4>SEGMENT ONE</h4>
-        <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat expedita, mollitia eius hic omnis velit dolor eos adipisci commodi ex nihil itaque cum atque eveniet ad reiciendis sed alias quia?
-        Praesentium voluptatem asperiores beatae distinctio omnis deserunt ad accusamus enim? Blanditiis, sed maxime neque aperiam minus doloribus quod nostrum tempore, quidem temporibus unde omnis nisi aliquam odio, corporis laboriosam! Ea?</i></p>
-    </fieldset>
-</div>
-<h3>LIST OF <abbr title="Fabulously Amazing Institute of Information Technology">FAIIT</abbr> COURSES</h3>
-<fieldset>
-    <span>
-        <p><b>FRONTEND DEVELOPEMENT COURSES</b></p>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-        </ul>
-    </span>
-    <span>
-        <p><b>BACKEND DEVELOPEMENT COURSES</b></p>
-        <ol>
-            <li>Python</li>
-            <li>JAVA</li>
-            <li>Ruby</li>
-            <li>PHP</li>
-            <li>Node.Js</li>
-        </ol>
-    </span>
-</fieldset>
-<h3><center>AVALILABLE DAY AND TIME</center></h3>
-<dt>
-    <dl>Monday __ Wednesday</dl>
-    <dd>9am ___ 4pm</dd>
-</dt>
-<dt>
-    <dl>Thursday</dl>
-    <dd>10:30am __ 4:30pm</dd>
-</dt>
-<dt>
-    <dl>Friday</dl>
-    <dd>9am ___ 4pm</dd>
-</dt>
-<p><i><center>Let's make your offspring a programmer.</center></i></p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lesson-10.css">
+    <title>FORM PROJECT PRACTICE</title>
+</head>
+<body>
+    <h1><center><u>FORM PROJECT PRACTICE</u></center></h1>
+    <section>
+    <form action="https://httpbin.org/get" method="post">
+        <div>
+            <label><b>Full Name:</b></label>
+            <input type="text" placeholder="Jennifer Lawrence" required="false" autofocus class="fullName">
+        </div>
+        <div>
+            <label for="PhoneNumber"><b>Phone Number:</b></label>
+            <input type="tel" maxlength="11" placeholder="09026941732" required class="PhoneNumber">
+        </div>
+        <div>
+            <label for="EmailAddress"><b>Email:</b></label>
+            <input type="email" placeholder="teemarh.code@gmail.com" required class="email">
+        </div>
+        <div>
+            <label for="password"><b>Password:</b></label>
+            <input type="password" required placeholder="six-digit placeholder" maxlength="6" class="password">
+        </div>
+        <div>
+            <label for="Select"><b>Best Cinematic Movie:</b></label>
+            <select name="select" id="select" class="select">
+                <optgroup label="Action Movie Category">
+                    <option value="Fast and Furious">Fast and Furious</option>
+                    <option value="BeeKeeper">BeeKeeper</option>
+                    <option value="6 Underground">6 Underground</option>
+                    <option value="Extraction">Extraction</option>
+                    <option value="The Inmate">The Inmate</option>  
+                </optgroup>
+                <optgroup label="Romance Movie Category">
+                    <option value="Burning Heart">Burning Heart</option>
+                    <option value="356 Days">356 Days</option>
+                    <option value="Fifty Shades of Grey">Fifty Shades of Grey</option>
+                    <option value="After we Fell">After we Fell</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="UploadFiles"><b>Upload Files:</b></label>
+            <input type="file" multiple class="file">
+        </div>
+        <div>
+            <label for="FavoriteMovie"><b>Favorite Movie:</b></label>
+            <label  class="checkbox">
+            <input type="checkbox">
+            <label>Fifty Shades of Grey</label>
+            <input type="checkbox">
+            <label>After we Fell</label>
+            <input type="checkbox">
+            <label>Burning Heart</label>
+            <input type="checkbox">
+            <label>Fast and Furious</label>
+        </label>
+        </div>
+        <div>
+            <label for="FavoriteMovie"><b>Least Favorite Movie:</b></label>
+            <label class="radio">
+            <input type="radio" name="movie">
+            <label>Fifty Shades of Grey</label>
+            <input type="radio" name="movie" checked>
+            <label>After we Fell</label>
+            <input type="radio" name="movie">
+            <label>Burning Heart</label>
+            <input type="radio" name="movie">
+            <label>Fast and Furious</label>
+        </label>
+        </div>
+        <div>
+            <label><b>Share your Opinion(s):</b></label>
+            <textarea class="textarea
+            " cols="30" rows="10" placeholder="write here"></textarea>
+        </div>
+        <div class="btnP">
+        <input type="reset" class="btn">
+        <input type="submit"  class="btn">
+    </div>
+    </form>
+</section>
 </body>
 </html>

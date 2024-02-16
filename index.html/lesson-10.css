@@ -1,0 +1,109 @@
+body {
+    width: auto;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section::before {
+    content: '';
+    position: absolute;
+    filter: blur(55px);
+    z-index: -2;
+    width: 700px;
+    height: 520px;
+    background-color: rgb(168, 150, 150);
+}
+form {
+    background-color: rgba(51, 39, 39, 0.2);
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.6), -2px -2px 5px rgba(255, 255, 255, 0.6);
+    padding: 20px 20px;
+    border-radius: 10px 10px;
+    min-width: 500px;
+    z-index: 5;
+}
+.fullName {
+    position: relative;
+    left: 5.9rem;
+    width: 200px;
+    padding: 3px;
+  
+}
+.PhoneNumber {
+    position: relative;
+    left: 3.9rem;
+    width: 200px;
+    padding: 3px;
+}
+.email {
+    position: relative;
+    left: 7.8rem;
+    width: 200px;
+    padding: 3px;
+}
+.password {
+    position: relative;
+    left: 6.2rem;
+    width: 200px;
+    padding: 3px;
+}
+.select {
+    position: relative;
+    left: 1rem;
+    width: 200px;
+    padding: 3px;
+}
+.file {
+    position: relative;
+    left: 5rem;
+    padding: 3px;
+}
+.checkbox {
+    position: relative;
+    left: 3.7rem;
+    padding: 3px;
+}
+.radio {
+    position: relative;
+    left: 1rem;
+    padding: 3px;
+}
+.textarea{
+    position: relative;
+    left: 1rem;
+    padding: 3px;
+}
+select {
+    width: 270px;
+}
+div {
+    margin-bottom: 10px;
+}
+.btn {
+    width: 100px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.btnP {
+    display: flex;
+}
+@media screen and (max-width: 567px) {
+    body {
+        min-width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        font-size: 20px;
+    }
+}

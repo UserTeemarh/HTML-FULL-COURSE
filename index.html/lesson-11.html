@@ -5,13 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table</title>
-</head>
-<body>
     <style>
         body {
             background: black;
             color: white;
-            font-size: 23px;
+            font-size: 20px;
         }
         mark {
             background: white;
@@ -26,14 +24,20 @@
             background: white;
             color: black;
         }
-    </style>         
-    <h1><center>THE TABLE ELEMENT</center></h1>
+        h1 {
+            text-align: center;
+        }
+    </style>    
+</head>
+<body>
+      
+    <h1>THE TABLE ELEMENT</center></h1>
     <p>The &lt;table&gt; element represents tabular data __ that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data.</p>
     <dt>
         <dl><b>Syntax:</b></dl>
         <dd>The &lt;table&gt; tag is written as &lt;table&gt;...&lt;/table&gt; with the various table element nested between the start and end tags.</dd>
     </dt>
-    <table border="2" align="center">
+    <table border="2">
         <caption><marquee behaviour="alternate" direction="right">TABLE ELEMENT AND DESCRIPTION</marquee></caption>
         <thead>
             <th>TABLE ELEMENT</th>
@@ -78,7 +82,7 @@
             </tr>
         </tbody>
     </table>
-    <h3>TABLE ATTRIBUTES</h3>
+    <h3><u>TABLE ATTRIBUTES</u></h3>
     <p>Table attributes adjust the behaviour or display of its content. known as <b>table-child</b></p>
     <table border="1">
         <caption>TABLE ATTRIBUTES AND DESCRIPTION</caption>
@@ -131,14 +135,14 @@
         </tbody>
 
     </table>
-    <fieldset>
+    <fieldset style="text-transform: capitalize; padding: 10px;">
         <legend>my assignment</legend>
-    <li>1. creat a table and set the border to 5px</li>
+    <li>1. create a table and set the border to 5px</li>
     <li>2. give your table 10 different heading in which they have to be in column form.</li>
     <li>3. give each heading 5 table data</li>
     <li>4. create another table, give it 5 heading, NOTE heading one should be <mark> null</mark></li>
-    <li>5. inside table body, create a th and set it to be <sup>rowpan</sup> and give it 5 different td corresponding to the table heading..</li>
-    <li>6. inside table body, create a th and set it to be colspan and give it 5 different td corresponding to the table heading..</li>
+    <li>5. inside table body, create a th and set it to be <sup>rowspan</sup> and give it 5 different td corresponding to the table heading..</li>
+    <li>6. inside table body, create a th and set it to be <sub>colspan</sub> and give it 5 different td corresponding to the table heading..</li>
     <li>7. create a <strong>copyright</strong> to your footer.</li>
     </fieldset>
     <footer><code>&lt;&lt;&lt; &copy; copyright || 2030 &gt;&gt;&gt;</code></footer>

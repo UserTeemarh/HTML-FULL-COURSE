@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEMANTIC ELEMENTS</title>
+    <style>
+        html {
+            font-size: 110.5%;
+        }
+        body {
+            background: black;
+            color: white;
+            font-size: 23px;
+        }
+        mark {
+            background: white;
+        }
+        table,thead,th,tbody,tr td  {
+            border-collapse: collapse;
+            padding: 10px;
+            margin: 10px ;
+        }
+        td:first-child {
+            font-weight: 700;
+        }
+        thead, th {
+            background: white;
+            color: black;
+        }
+        @media (max-width: 600px) {
+            html {
+                font-size: 62.5%;
+            }
+            body {
+                max-width: 600px;
+            }
+            table,thead,th,tbody,tr td {
+                padding: 5px;
+                margin: 5px ;
+                font-size: 15px;
+            }
+            p {
+                font-size: 20px;
+                margin-top: 5px;
+            }
+        }
+    </style>  
+</head>
+<body>
+    <h1><center><u>SEMANTIC ELEMENTS</u></center></h1>
+    <p>Semantic elements are tags that carry meaning about the structure and content of a webpage, making the HTML code more descriptive and meaningful.</p>
+    <p>These elements provide information about the type of content they contain, helping both browsers and developers understand the purpose of different sections in a document.</p>
+    <table border="2">
+        <caption>SEMANTIC ELEMENTs And DESCRIPTION</caption>
+        <thead>
+            <th>SEMANTIC ELEMENTs</th>
+            <th>DESCRIPTION</th>
+        </thead>
+        <tbody>
+            <td>&lt;header&gt;..&lt;/header&gt;</td>
+            <td>It is typically used to define introductory content at the top of a document or section.It may contain some heading elements but also a logo, a search form, an author name, and other elements.</td>
+            <tr>
+            <td>&lt;nav&gt;..&lt;/nav&gt;</td>
+            <td>It represents a section of page that links to other pages or to parts the page: It is used to define a set of navigation links, It allows the creation of navigation bar or menu on the webpage.</td>
+            </tr>
+            <tr>
+                <td>&lt;section&gt;..&lt;/section&gt;</td>
+                <td>It is used to define a section in a document and often employed to group related content together, making it sematically meaningful for both browsers and developers.</td>
+            </tr>
+            <tr>
+                <td>&lt;article&gt;..&lt;/article&gt;</td>
+                <td>It is used to define a self-contained piece of content that could be distributed and reused independently. such as news article, blog post, or forum post.</td>
+            </tr>
+            <tr>
+                <td>&lt;aside&gt;..&lt;/aside&gt;</td>
+                <td>It is used to define content that is tangetially related to the content around it, often presented as a advertisement, or other supplementary content.</td>
+            </tr>
+            <tr>
+                <td>&lt;details&gt;..&lt;/details&gt;</td>
+                <td>
+                    It is used to create a disclosure widget from which the user can reveal additional information or controls. The visible content within the &lt;details&gt; tag serves as a summary or the content that is initially shown, and additional details are hidden until the user interacts with the disclosure widget. 
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;summary&gt;..&lt;/summary&gt;</td>
+                <td>The &lt;summary&gt; element is used in conjuction with the &lt;details&gt; tag. It is represented  by the &lt;summary&gt; tag and provides a visible heading or summary for the content within &lt;details&gt; element. The summary is what users see before interacting with the disclosure widget to reveal or hide additional details.</td>
+            </tr>
+            <tr>
+                <td>&lt;main&gt;..&lt;/main&gt;</td>
+                <td>It is used to define the main content of a document. It represents the central content area and should not be include content that is tangentially or supplementary to the main content. The &lt;main&gt; tag is typically employed to improve document structure accessibility.</td>
+            </tr>
+            <tr>
+                <td>&lt;time&gt;..&lt;/time&gt;</td>
+                <td>It is used to represent  a specific period  in time or a range of the time. It can includes date, time, or both. The <b>datetime</b> attribute is often used to provide machine-readable information about the time value.</td>
+            </tr>
+            <tr>
+                <td>&lt;footer&gt;..&lt;/footer&gt;</td>
+                <td>It is used to define the footer of a document or a section. It typically contains copyright information, links to related documents, or any other content that is considered as the footer of the page or section.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
